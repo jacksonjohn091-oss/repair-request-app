@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d6d6d; -webkit-text-stroke: #6d6d6d}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6b0001; -webkit-text-stroke: #6b0001}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #fb0007; -webkit-text-stroke: #fb0007}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #0000ff; -webkit-text-stroke: #0000ff}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #093c94; -webkit-text-stroke: #093c94}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; -webkit-text-stroke: #000000; min-height: 16.0px}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #18702b; -webkit-text-stroke: #18702b}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4d5055; -webkit-text-stroke: #4d5055}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #18702b; -webkit-text-stroke: #18702b; min-height: 16.0px}
+    span.s1 {font-kerning: none; background-color: #ecf1f7}
+    span.s2 {font-kerning: none; color: #fb0007; background-color: #ecf1f7; -webkit-text-stroke: 0px #fb0007}
+    span.s3 {font-kerning: none; color: #2a2a2a; background-color: #ecf1f7; -webkit-text-stroke: 0px #2a2a2a}
+    span.s4 {font-kerning: none; color: #000000; background-color: #ecf1f7; -webkit-text-stroke: 0px #000000}
+    span.s5 {font-kerning: none; color: #0000ff; background-color: #ecf1f7; -webkit-text-stroke: 0px #0000ff}
+    span.s6 {font-kerning: none; color: #6b0001; background-color: #ecf1f7; -webkit-text-stroke: 0px #6b0001}
+    span.s7 {font-kerning: none; color: #093c94; background-color: #ecf1f7; -webkit-text-stroke: 0px #093c94}
+    span.s8 {font-kerning: none; color: #137646; background-color: #ecf1f7; -webkit-text-stroke: 0px #137646}
+    span.s9 {font-kerning: none; color: #18702b; background-color: #ecf1f7; -webkit-text-stroke: 0px #18702b}
+    span.s10 {font-kerning: none}
+    span.s11 {font: 14.0px 'Apple Color Emoji'; font-kerning: none; background-color: #ecf1f7}
+    span.s12 {font-kerning: none; color: #6f0ec3; background-color: #ecf1f7; -webkit-text-stroke: 0px #6f0ec3}
+    span.s13 {font-kerning: none; color: #0e6e6d; background-color: #ecf1f7; -webkit-text-stroke: 0px #0e6e6d}
+    span.s14 {font-kerning: none; color: #4d5055; background-color: #ecf1f7; -webkit-text-stroke: 0px #4d5055}
+    span.s15 {font-kerning: none; color: #a4450b; background-color: #ecf1f7; -webkit-text-stroke: 0px #a4450b}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">html</span><span class="s4"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s5">"en"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s5">"UTF-8"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">meta</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s4"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">title</span><span class="s3">&gt;</span><span class="s1">Repair Request App</span><span class="s3">&lt;/</span><span class="s6">title</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">body</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s1"> </span><span class="s7">sans-serif</span><span class="s1">;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s4"> </span><span class="s1">linear-gradient(to</span><span class="s4"> </span><span class="s1">right</span><span class="s4">, </span><span class="s1">#ff0000</span><span class="s4">, </span><span class="s1">#ff7f00</span><span class="s4">, </span><span class="s1">#ffff00</span><span class="s4">, </span><span class="s1">#00ff00</span><span class="s4">, </span><span class="s1">#0000ff</span><span class="s4">, </span><span class="s1">#4b0082</span><span class="s4">, </span><span class="s1">#9400d3)</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#333</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">line-height:</span><span class="s1"> </span><span class="s8">1.6</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">20px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s7">flex</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">flex-direction:</span><span class="s4"> </span><span class="s7">column</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">align-items:</span><span class="s1"> </span><span class="s7">center</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">min-height:</span><span class="s1"> </span><span class="s8">100vh</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.container</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">max-width:</span><span class="s1"> </span><span class="s8">800px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s8">100%</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#ffffff</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">2em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">12px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s8">0</span><span class="s1"> </span><span class="s8">4px</span><span class="s1"> </span><span class="s8">15px</span><span class="s1"> </span><span class="s7">rgba(</span><span class="s8">0</span><span class="s1">, </span><span class="s8">0</span><span class="s1">, </span><span class="s8">0</span><span class="s1">, </span><span class="s8">0.1</span><span class="s7">)</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-bottom:</span><span class="s1"> </span><span class="s8">20px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.main-menu</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s7">flex</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">justify-content:</span><span class="s4"> </span><span class="s7">center</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">gap:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-bottom:</span><span class="s1"> </span><span class="s8">20px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.main-menu</span><span class="s4"> </span><span class="s1">button</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#4CAF50</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">white</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">12px</span><span class="s1"> </span><span class="s8">24px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">8px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">cursor:</span><span class="s1"> </span><span class="s7">pointer</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s8">1rem</span><span class="s1">;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s4"> </span><span class="s1">background-color</span><span class="s4"> </span><span class="s8">0.3s</span><span class="s4"> </span><span class="s1">ease</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.main-menu</span><span class="s4"> </span><span class="s1">button:hover</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#45a049</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">.main-menu</span><span class="s1"> </span><span class="s6">a</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">text-decoration:</span><span class="s4"> </span><span class="s7">none</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s7">inline-block</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">hr</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">height:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background:</span><span class="s1"> </span><span class="s7">#e0e0e0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s8">20px</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.view-section</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">h1</span><span class="s1">, </span><span class="s6">h2</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">text-align:</span><span class="s1"> </span><span class="s7">center</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#333</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-bottom:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">form</span><span class="s4">, </span><span class="s1">.search-section</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s7">flex</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">flex-direction:</span><span class="s4"> </span><span class="s7">column</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">gap:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">label</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-weight:</span><span class="s1"> </span><span class="s7">bold</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#555</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">input</span><span class="s1">[</span><span class="s7">type</span><span class="s1">=</span><span class="s9">"text"</span><span class="s1">],</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">input</span><span class="s1">[</span><span class="s7">type</span><span class="s1">=</span><span class="s9">"email"</span><span class="s1">],</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">input</span><span class="s1">[</span><span class="s7">type</span><span class="s1">=</span><span class="s9">"date"</span><span class="s1">],</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">textarea</span><span class="s1">,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">select</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">10px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1"> </span><span class="s7">solid</span><span class="s1"> </span><span class="s7">#ddd</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">6px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s8">1rem</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">width:</span><span class="s1"> </span><span class="s8">100%</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-sizing:</span><span class="s1"> </span><span class="s7">border-box</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s7">border-color</span><span class="s1"> </span><span class="s8">0.3s</span><span class="s1"> </span><span class="s7">ease</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">input:focus</span><span class="s4">,</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">textarea:focus</span><span class="s4">,</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">select:focus</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">outline:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-color:</span><span class="s1"> </span><span class="s7">#4CAF50</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s6">button</span><span class="s1"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#4CAF50</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">white</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">12px</span><span class="s1"> </span><span class="s8">20px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">8px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">cursor:</span><span class="s1"> </span><span class="s7">pointer</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s8">1rem</span><span class="s1">;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s4"> </span><span class="s1">background-color</span><span class="s4"> </span><span class="s8">0.3s</span><span class="s4"> </span><span class="s1">ease</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">button:hover</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#45a049</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">#search-results</span><span class="s4">, </span><span class="s1">#all-requests</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-top:</span><span class="s1"> </span><span class="s8">1.5em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#f9f9f9</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">8px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1"> </span><span class="s7">solid</span><span class="s1"> </span><span class="s7">#eee</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">#search-results</span><span class="s4"> </span><span class="s1">h3</span><span class="s4">, </span><span class="s1">#all-requests</span><span class="s4"> </span><span class="s1">h3</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-top:</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#4CAF50</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">#search-results</span><span class="s4"> </span><span class="s1">p</span><span class="s4">, </span><span class="s1">#all-requests</span><span class="s4"> </span><span class="s1">p</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s8">0.5em</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.message-box</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-top:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">8px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">text-align:</span><span class="s1"> </span><span class="s7">center</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-weight:</span><span class="s1"> </span><span class="s7">bold</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.message-box.success</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#d4edda</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#155724</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.message-box.error</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#f8d7da</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#721c24</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.search-section</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s7">flex</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">flex-direction:</span><span class="s4"> </span><span class="s7">row</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">align-items:</span><span class="s1"> </span><span class="s7">center</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">gap:</span><span class="s1"> </span><span class="s8">0.5em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.search-section</span><span class="s4"> </span><span class="s1">input</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">flex-grow:</span><span class="s1"> </span><span class="s8">1</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.copy-button</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#007bff</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">white</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">8px</span><span class="s1"> </span><span class="s8">12px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">6px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">cursor:</span><span class="s1"> </span><span class="s7">pointer</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-left:</span><span class="s1"> </span><span class="s8">10px</span><span class="s1">;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s4"> </span><span class="s1">background-color</span><span class="s4"> </span><span class="s8">0.3s</span><span class="s4"> </span><span class="s1">ease</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.copy-button:hover</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#0056b3</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.request-item</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s8">1px</span><span class="s1"> </span><span class="s7">solid</span><span class="s1"> </span><span class="s7">#ddd</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-bottom:</span><span class="s1"> </span><span class="s8">1em</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">8px</span><span class="s1">;</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#fff</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.request-item</span><span class="s4"> </span><span class="s1">p</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin:</span><span class="s1"> </span><span class="s8">0.5em</span><span class="s1"> </span><span class="s8">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.request-item</span><span class="s4"> </span><span class="s1">p</span><span class="s4"> </span><span class="s1">strong</span><span class="s4"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">#4CAF50</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.delete-button</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#dc3545</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s7">white</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s8">8px</span><span class="s1"> </span><span class="s8">12px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border:</span><span class="s1"> </span><span class="s7">none</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-radius:</span><span class="s1"> </span><span class="s8">6px</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">cursor:</span><span class="s1"> </span><span class="s7">pointer</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">margin-left:</span><span class="s1"> </span><span class="s8">10px</span><span class="s1">;</span></p>
+<p class="p6"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s4"> </span><span class="s1">background-color</span><span class="s4"> </span><span class="s8">0.3s</span><span class="s4"> </span><span class="s1">ease</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">.delete-button:hover</span><span class="s4"> {</span></p>
+<p class="p3"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s4"> </span><span class="s7">#c82333</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"container main-menu"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"show-form-button"</span><span class="s3">&gt;</span><span class="s1">Raise a New Request</span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"show-search-button"</span><span class="s3">&gt;</span><span class="s1">Search Existing Request</span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"show-all-button"</span><span class="s3">&gt;</span><span class="s1">View All Requests</span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"export-button"</span><span class="s3">&gt;</span><span class="s1">Export Data (CSV)</span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">hr</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"form-container"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"view-section"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"container"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">h1</span><span class="s3">&gt;</span><span class="s11">🛠️</span><span class="s1"> Raise a Repair Request</span><span class="s3">&lt;/</span><span class="s6">h1</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">form</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"repair-form"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"name"</span><span class="s3">&gt;</span><span class="s1">Name:</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">input</span><span class="s1"> </span><span class="s2">type</span><span class="s3">=</span><span class="s5">"text"</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"name"</span><span class="s1"> </span><span class="s2">name</span><span class="s3">=</span><span class="s5">"name"</span><span class="s1"> </span><span class="s2">required</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"email"</span><span class="s3">&gt;</span><span class="s1">Email:</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">input</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"email"</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"email"</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"email"</span><span class="s4"> </span><span class="s2">required</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"date-requested"</span><span class="s3">&gt;</span><span class="s1">Date Requesting Repairs:</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">input</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"date"</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"date-requested"</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"dateRequested"</span><span class="s4"> </span><span class="s2">required</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"reporter-name"</span><span class="s3">&gt;</span><span class="s1">Who Reported the Issue? (if not yourself):</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">input</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text"</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"reporter-name"</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"reporterName"</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"contact-person"</span><span class="s3">&gt;</span><span class="s1">Who Should We Contact?</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">select</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"contact-person"</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"contactPerson"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s5">"contractor"</span><span class="s3">&gt;</span><span class="s1">Contractor</span><span class="s3">&lt;/</span><span class="s6">option</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s6">option</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s5">"handyperson"</span><span class="s3">&gt;</span><span class="s1">Handyperson</span><span class="s3">&lt;/</span><span class="s6">option</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s6">select</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"contractor-name"</span><span class="s3">&gt;</span><span class="s1">Contractor Name (if known):</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">input</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text"</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"contractor-name"</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"contractorName"</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"follow-up-notes"</span><span class="s3">&gt;</span><span class="s1">Follow Up Notes:</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">textarea</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"follow-up-notes"</span><span class="s4"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"followUpNotes"</span><span class="s4"> </span><span class="s2">rows</span><span class="s3">=</span><span class="s1">"4"</span><span class="s3">&gt;&lt;/</span><span class="s6">textarea</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s1"> </span><span class="s2">type</span><span class="s3">=</span><span class="s5">"submit"</span><span class="s3">&gt;</span><span class="s1">Submit Request</span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"form-message"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"message-box"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">form</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"search-container"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"view-section"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"container"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">h2</span><span class="s3">&gt;</span><span class="s11">🔍</span><span class="s1"> Search Repair Request by ID</span><span class="s3">&lt;/</span><span class="s6">h2</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"search-section"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">label</span><span class="s1"> </span><span class="s2">for</span><span class="s3">=</span><span class="s5">"search-id"</span><span class="s3">&gt;</span><span class="s1">Enter Request ID:</span><span class="s3">&lt;/</span><span class="s6">label</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">input</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"text"</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"search-id"</span><span class="s4"> </span><span class="s2">placeholder</span><span class="s3">=</span><span class="s1">"e.g., Req-1"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">button</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s5">"search-button"</span><span class="s3">&gt;</span><span class="s1">Search</span><span class="s3">&lt;/</span><span class="s6">button</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"search-results"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s3">&gt;</span><span class="s1">Results will appear here...</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"search-message"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"message-box"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"all-requests-container"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"view-section"</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"container"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">h2</span><span class="s3">&gt;</span><span class="s11">📋</span><span class="s1"> All Repair Requests</span><span class="s3">&lt;/</span><span class="s6">h2</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"all-requests"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s6">p</span><span class="s3">&gt;</span><span class="s1">Loading requests...</span><span class="s3">&lt;/</span><span class="s6">p</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s6">div</span><span class="s4"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"all-requests-message"</span><span class="s4"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"message-box"</span><span class="s3">&gt;&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s6">div</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p4"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s6">script</span><span class="s4"> </span><span class="s2">type</span><span class="s3">=</span><span class="s1">"module"</span><span class="s3">&gt;</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s12">import</span><span class="s4"> { initializeApp } </span><span class="s12">from</span><span class="s4"> </span><span class="s1">"https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js"</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">import</span><span class="s1"> { getAuth, signInAnonymously, signInWithCustomToken } </span><span class="s12">from</span><span class="s1"> </span><span class="s9">"https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js"</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">import</span><span class="s1"> { getFirestore, doc, setDoc, getDoc, collection, onSnapshot, query, getDocs, updateDoc, deleteDoc } </span><span class="s12">from</span><span class="s1"> </span><span class="s9">"https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"</span><span class="s1">;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Global variables provided by the canvas environment</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> firebaseConfig = </span><span class="s13">JSON</span><span class="s1">.parse(</span><span class="s12">typeof</span><span class="s1"> __firebase_config !== </span><span class="s9">'undefined'</span><span class="s1"> ? __firebase_config : </span><span class="s12">null</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> appId = </span><span class="s12">typeof</span><span class="s1"> __app_id !== </span><span class="s9">'undefined'</span><span class="s1"> ? __app_id : </span><span class="s9">'default-app-id'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> initialAuthToken = </span><span class="s12">typeof</span><span class="s1"> __initial_auth_token !== </span><span class="s9">'undefined'</span><span class="s1"> ? __initial_auth_token : </span><span class="s12">null</span><span class="s1">;</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Initialize Firebase services</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> app = initializeApp(firebaseConfig);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> db = getFirestore(app);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> auth = getAuth(app);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Global variable to hold all requests</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">let</span><span class="s1"> allRequests = [];</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// DOM element references</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> showFormButton = document.getElementById(</span><span class="s9">'show-form-button'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> showSearchButton = document.getElementById(</span><span class="s9">'show-search-button'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> showAllButton = document.getElementById(</span><span class="s9">'show-all-button'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> exportButton = document.getElementById(</span><span class="s9">'export-button'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> formContainer = document.getElementById(</span><span class="s9">'form-container'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> searchContainer = document.getElementById(</span><span class="s9">'search-container'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> allRequestsContainer = document.getElementById(</span><span class="s9">'all-requests-container'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> allSections = document.querySelectorAll(</span><span class="s9">'.view-section'</span><span class="s1">);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> repairForm = document.getElementById(</span><span class="s9">'repair-form'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> formMessage = document.getElementById(</span><span class="s9">'form-message'</span><span class="s1">);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> searchIdInput = document.getElementById(</span><span class="s9">'search-id'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> searchButton = document.getElementById(</span><span class="s9">'search-button'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> searchResults = document.getElementById(</span><span class="s9">'search-results'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> searchMessage = document.getElementById(</span><span class="s9">'search-message'</span><span class="s1">);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> allRequestsDiv = document.getElementById(</span><span class="s9">'all-requests'</span><span class="s1">);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Initial view setup</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>showFormButton.addEventListener(</span><span class="s9">'click'</span><span class="s1">, () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>switchView(</span><span class="s9">'form-container'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>showSearchButton.addEventListener(</span><span class="s9">'click'</span><span class="s1">, () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>switchView(</span><span class="s9">'search-container'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>showAllButton.addEventListener(</span><span class="s9">'click'</span><span class="s1">, () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>switchView(</span><span class="s9">'all-requests-container'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>exportButton.addEventListener(</span><span class="s9">'click'</span><span class="s1">, () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>exportToCsv();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s14">/**</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* Switches the displayed view section.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* @param {string} viewId The ID of the section to show.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>*/</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">function</span><span class="s1"> switchView(viewId) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>allSections.forEach(section =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>section.style.display = </span><span class="s9">'none'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> selectedSection = document.getElementById(viewId);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (selectedSection) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>selectedSection.style.display = </span><span class="s9">'block'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s14">/**</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* Signs in the user using the provided custom token or anonymously.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* This is necessary to use the database.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>*/</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">async</span><span class="s1"> </span><span class="s12">function</span><span class="s1"> authenticateUser() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">try</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">if</span><span class="s1"> (initialAuthToken) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">await</span><span class="s1"> signInWithCustomToken(auth, initialAuthToken);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>console.log(</span><span class="s9">"Signed in with custom token."</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s12">else</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">await</span><span class="s1"> signInAnonymously(auth);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>console.log(</span><span class="s9">"Signed in anonymously."</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} </span><span class="s12">catch</span><span class="s1"> (error) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>console.error(</span><span class="s9">"Authentication error:"</span><span class="s1">, error);</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">                </span>showMessage(formMessage, </span><span class="s1">'Authentication failed. Please try again.'</span><span class="s4">, </span><span class="s1">'error'</span><span class="s4">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s14">/**</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* Fetches all requests from Firestore and listens for real-time changes.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* The data is stored in the 'allRequests' global variable.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>*/</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">const</span><span class="s1"> fetchAllRequests = () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (!auth.currentUser) {</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">                </span>console.log(</span><span class="s1">"Authentication not ready. Skipping data fetch."</span><span class="s4">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">return</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> requestsRef = collection(db, </span><span class="s9">`artifacts/</span><span class="s1">${appId}</span><span class="s9">/public/data/requests`</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> q = query(requestsRef);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">// onSnapshot sets up a real-time listener</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>onSnapshot(q, (snapshot) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>allRequests = [];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>snapshot.forEach((doc) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>allRequests.push({ id: doc.id, ...doc.data() });</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>renderAllRequests();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}, (error) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>console.error(</span><span class="s9">"Error fetching requests:"</span><span class="s1">, error);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Call authentication on page load</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>auth.onAuthStateChanged(user =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (user) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>fetchAllRequests();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} </span><span class="s12">else</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>authenticateUser().then(() =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>fetchAllRequests();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Form Submission Logic</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>repairForm.addEventListener(</span><span class="s9">'submit'</span><span class="s1">, </span><span class="s12">async</span><span class="s1"> (e) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>e.preventDefault();</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (!auth.currentUser) {</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">                </span>showMessage(formMessage, </span><span class="s1">'Please wait, authenticating with the server...'</span><span class="s4">, </span><span class="s1">'error'</span><span class="s4">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">return</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> formData = </span><span class="s12">new</span><span class="s1"> </span><span class="s13">FormData</span><span class="s1">(repairForm);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> data = </span><span class="s13">Object</span><span class="s1">.fromEntries(formData.entries());</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">// --- Start of new ID generation logic ---</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">let</span><span class="s1"> newIdNumber = </span><span class="s15">1</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">try</span><span class="s1"> {</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">                </span></span><span class="s1">// Fetch all documents to find the highest number</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> requestsRef = collection(db, </span><span class="s9">`artifacts/</span><span class="s1">${appId}</span><span class="s9">/public/data/requests`</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> querySnapshot = </span><span class="s12">await</span><span class="s1"> getDocs(requestsRef);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">let</span><span class="s1"> maxId = </span><span class="s15">0</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>querySnapshot.forEach(doc =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">const</span><span class="s1"> idParts = doc.id.split(</span><span class="s9">'-'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">if</span><span class="s1"> (idParts[</span><span class="s15">0</span><span class="s1">] === </span><span class="s9">'Req'</span><span class="s1"> &amp;&amp; idParts.length &gt; </span><span class="s15">1</span><span class="s1">) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s12">const</span><span class="s1"> idNum = parseInt(idParts[</span><span class="s15">1</span><span class="s1">]);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s12">if</span><span class="s1"> (!isNaN(idNum) &amp;&amp; idNum &gt; maxId) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>maxId = idNum;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>newIdNumber = maxId + </span><span class="s15">1</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} </span><span class="s12">catch</span><span class="s1"> (error) {</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">                </span>console.error(</span><span class="s1">"Error getting max ID, defaulting to 1:"</span><span class="s4">, error);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> docId = </span><span class="s9">`Req-</span><span class="s1">${newIdNumber}</span><span class="s9">`</span><span class="s1">;</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">// --- End of new ID generation logic ---</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>data.timestamp = </span><span class="s12">new</span><span class="s1"> </span><span class="s13">Date</span><span class="s1">().toISOString();</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">try</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">await</span><span class="s1"> setDoc(doc(db, </span><span class="s9">`artifacts/</span><span class="s1">${appId}</span><span class="s9">/public/data/requests`</span><span class="s1">, docId), data);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">                </span>showMessage(formMessage, </span><span class="s1">`Success! Request submitted with ID: &lt;span style="font-weight: bold;"&gt;</span><span class="s4">${docId}</span><span class="s1">&lt;/span&gt;`</span><span class="s4">, </span><span class="s1">'success'</span><span class="s4">);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> copyButton = document.createElement(</span><span class="s9">'button'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>copyButton.className = </span><span class="s9">'copy-button'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>copyButton.textContent = </span><span class="s9">'Copy ID'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>formMessage.appendChild(copyButton);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>copyButton.addEventListener(</span><span class="s9">'click'</span><span class="s1">, () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">const</span><span class="s1"> tempInput = document.createElement(</span><span class="s9">'input'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>document.body.appendChild(tempInput);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>tempInput.value = docId;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>tempInput.select();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>document.execCommand(</span><span class="s9">'copy'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>document.body.removeChild(tempInput);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showMessage(formMessage, </span><span class="s9">`Request ID Copied!`</span><span class="s1">, </span><span class="s9">'success'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>repairForm.reset();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} </span><span class="s12">catch</span><span class="s1"> (error) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>console.error(</span><span class="s9">'Submission error:'</span><span class="s1">, error);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showMessage(formMessage, </span><span class="s9">`Failed to submit request: </span><span class="s1">${error.message}</span><span class="s9">`</span><span class="s1">, </span><span class="s9">'error'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Search Logic</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>searchButton.addEventListener(</span><span class="s9">'click'</span><span class="s1">, </span><span class="s12">async</span><span class="s1"> () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> requestId = searchIdInput.value.trim();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (!requestId) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showMessage(searchMessage, </span><span class="s9">'Please enter a Request ID.'</span><span class="s1">, </span><span class="s9">'error'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">return</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (!auth.currentUser) {</span></p>
+<p class="p8"><span class="s4"><span class="Apple-converted-space">                </span>showMessage(searchMessage, </span><span class="s1">'Please wait, authenticating with the server...'</span><span class="s4">, </span><span class="s1">'error'</span><span class="s4">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">return</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>searchResults.innerHTML = </span><span class="s9">'&lt;p&gt;Searching...&lt;/p&gt;'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>searchMessage.innerHTML = </span><span class="s9">''</span><span class="s1">;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">try</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> docRef = doc(db, </span><span class="s9">`artifacts/</span><span class="s1">${appId}</span><span class="s9">/public/data/requests`</span><span class="s1">, requestId);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> docSnap = </span><span class="s12">await</span><span class="s1"> getDoc(docRef);</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">if</span><span class="s1"> (docSnap.exists()) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">const</span><span class="s1"> foundRequest = docSnap.data();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>renderEditableForm(foundRequest, requestId);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showMessage(searchMessage, </span><span class="s9">'Request found!'</span><span class="s1">, </span><span class="s9">'success'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s12">else</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>searchResults.innerHTML = </span><span class="s9">'&lt;p&gt;No request found with that ID.&lt;/p&gt;'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showMessage(searchMessage, </span><span class="s9">'No request found.'</span><span class="s1">, </span><span class="s9">'error'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>} </span><span class="s12">catch</span><span class="s1"> (error) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>console.error(</span><span class="s9">'Search error:'</span><span class="s1">, error);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showMessage(searchMessage, </span><span class="s9">`An error occurred while searching: </span><span class="s1">${error.message}</span><span class="s9">`</span><span class="s1">, </span><span class="s9">'error'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Render all requests</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">function</span><span class="s1"> renderAllRequests() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (allRequests.length === </span><span class="s15">0</span><span class="s1">) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>allRequestsDiv.innerHTML = </span><span class="s9">'&lt;p&gt;No requests found in the database.&lt;/p&gt;'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">return</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>allRequestsDiv.innerHTML = </span><span class="s9">''</span><span class="s1">;</span></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">// Sort requests by ID number in descending order (latest first)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> sortedRequests = allRequests.sort((a, b) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> idA = parseInt(a.id.split(</span><span class="s9">'-'</span><span class="s1">)[</span><span class="s15">1</span><span class="s1">]);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> idB = parseInt(b.id.split(</span><span class="s9">'-'</span><span class="s1">)[</span><span class="s15">1</span><span class="s1">]);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">return</span><span class="s1"> idB - idA;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>sortedRequests.forEach(request =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> item = document.createElement(</span><span class="s9">'div'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>item.className = </span><span class="s9">'request-item'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>item.innerHTML = </span><span class="s9">`</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;h3&gt;Request ID: </span><span class="s4">${request.id}</span><span class="s1">&lt;/h3&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Name:&lt;/strong&gt; </span><span class="s4">${request.name}</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Email:&lt;/strong&gt; </span><span class="s4">${request.email}</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Date Requested:&lt;/strong&gt; </span><span class="s4">${request.dateRequested}</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Reporter:&lt;/strong&gt; </span><span class="s4">${request.reporterName || </span><span class="s1">'N/A'</span><span class="s4">}</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Contact Person:&lt;/strong&gt; </span><span class="s4">${request.contactPerson}</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Follow Up Notes:&lt;/strong&gt; </span><span class="s4">${request.followUpNotes || </span><span class="s1">'N/A'</span><span class="s4">}</span><span class="s1">&lt;/p&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                </span>`</span><span class="s4">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>allRequestsDiv.appendChild(item);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s14">/**</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* Exports all requests to a CSV file.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>*/</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">function</span><span class="s1"> exportToCsv() {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">if</span><span class="s1"> (allRequests.length === </span><span class="s15">0</span><span class="s1">) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>showMessage(searchMessage, </span><span class="s9">'No data to export.'</span><span class="s1">, </span><span class="s9">'error'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">return</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> headers = [</span><span class="s9">'id'</span><span class="s1">, ...</span><span class="s13">Object</span><span class="s1">.keys(allRequests[</span><span class="s15">0</span><span class="s1">])];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> csvRows = [];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>csvRows.push(headers.join(</span><span class="s9">','</span><span class="s1">));</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">for</span><span class="s1"> (</span><span class="s12">const</span><span class="s1"> request </span><span class="s12">of</span><span class="s1"> allRequests) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> values = headers.map(header =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">const</span><span class="s1"> value = request[header];</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">const</span><span class="s1"> stringValue = (value || </span><span class="s9">''</span><span class="s1">).toString().replace(</span><span class="s6">/"/</span><span class="s12">g</span><span class="s1">, </span><span class="s9">'""'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">return</span><span class="s1"> </span><span class="s9">`"</span><span class="s1">${stringValue}</span><span class="s9">"`</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>csvRows.push(values.join(</span><span class="s9">','</span><span class="s1">));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> csvString = csvRows.join(</span><span class="s9">'\n'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> blob = </span><span class="s12">new</span><span class="s1"> </span><span class="s13">Blob</span><span class="s1">([csvString], { type: </span><span class="s9">'text/csv;charset=utf-8;'</span><span class="s1"> });</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> link = document.createElement(</span><span class="s9">"a"</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">const</span><span class="s1"> url = </span><span class="s13">URL</span><span class="s1">.createObjectURL(blob);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>link.setAttribute(</span><span class="s9">"href"</span><span class="s1">, url);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>link.setAttribute(</span><span class="s9">"download"</span><span class="s1">, </span><span class="s9">"repair_requests.csv"</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>link.style.visibility = </span><span class="s9">'hidden'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.body.appendChild(link);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>link.click();</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.body.removeChild(link);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>showMessage(searchMessage, </span><span class="s9">'Exported all data to a CSV file.'</span><span class="s1">, </span><span class="s9">'success'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s14">/**</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* Renders the editable form for a found request.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* @param {object} data The request data to populate the form.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>* @param {string} docId The ID of the document to update.</span></p>
+<p class="p9"><span class="s1"><span class="Apple-converted-space">         </span>*/</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">function</span><span class="s1"> renderEditableForm(data, docId) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>searchResults.innerHTML = </span><span class="s9">`</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;Edit Request: </span><span class="s4">${docId}</span><span class="s1">&lt;/h3&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                </span>&lt;form id="edit-form"&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label for="edit-name"&gt;Name:&lt;/label&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="edit-name" name="name" value="</span><span class="s4">${data.name}</span><span class="s1">" required&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label for="edit-email"&gt;Email:&lt;/label&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input type="email" id="edit-email" name="email" value="</span><span class="s4">${data.email}</span><span class="s1">" required&gt;</span></p>
+<p class="p10"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label for="edit-date-requested"&gt;Date Requesting Repairs:&lt;/label&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input type="date" id="edit-date-requested" name="dateRequested" value="</span><span class="s4">${data.dateRequested}</span><span class="s1">" required&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label for="edit-reporter-name"&gt;Who Reported the Issue? (if not yourself):&lt;/label&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="edit-reporter-name" name="reporterName" value="</span><span class="s4">${data.reporterName || </span><span class="s1">''</span><span class="s4">}</span><span class="s1">"&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label for="edit-contact-person"&gt;Who Should We Contact?&lt;/label&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;select id="edit-contact-person" name="contactPerson"&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;option value="contractor" </span><span class="s4">${data.contactPerson === </span><span class="s1">'contractor'</span><span class="s4"> ? </span><span class="s1">'selected'</span><span class="s4"> : </span><span class="s1">''</span><span class="s4">}</span><span class="s1">&gt;Contractor&lt;/option&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;option value="handyperson" </span><span class="s4">${data.contactPerson === </span><span class="s1">'handyperson'</span><span class="s4"> ? </span><span class="s1">'selected'</span><span class="s4"> : </span><span class="s1">''</span><span class="s4">}</span><span class="s1">&gt;Handyperson&lt;/option&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/select&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label for="edit-contractor-name"&gt;Contractor Name (if known):&lt;/label&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input type="text" id="edit-contractor-name" name="contractorName" value="</span><span class="s4">${data.contractorName || </span><span class="s1">''</span><span class="s4">}</span><span class="s1">"&gt;</span></p>
+<p class="p10"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label for="edit-follow-up-notes"&gt;Follow Up Notes:&lt;/label&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;textarea id="edit-follow-up-notes" name="followUpNotes" rows="4"&gt;</span><span class="s4">${data.followUpNotes || </span><span class="s1">''</span><span class="s4">}</span><span class="s1">&lt;/textarea&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button type="submit" id="update-button"&gt;Update Details&lt;/button&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;button type="button" id="delete-button" class="delete-button"&gt;Delete Request&lt;/button&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/form&gt;</span></p>
+<p class="p8"><span class="s1"><span class="Apple-converted-space">            </span>`</span><span class="s4">;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">// Add event listener for the update button</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s9">'edit-form'</span><span class="s1">).addEventListener(</span><span class="s9">'submit'</span><span class="s1">, </span><span class="s12">async</span><span class="s1"> (e) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>e.preventDefault();</span></p>
+<p class="p7"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> formData = </span><span class="s12">new</span><span class="s1"> </span><span class="s13">FormData</span><span class="s1">(e.target);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">const</span><span class="s1"> updatedData = </span><span class="s13">Object</span><span class="s1">.fromEntries(formData.entries());</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">try</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">await</span><span class="s1"> updateDoc(doc(db, </span><span class="s9">`artifacts/</span><span class="s1">${appId}</span><span class="s9">/public/data/requests`</span><span class="s1">, docId), updatedData);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showMessage(searchMessage, </span><span class="s9">'Request updated successfully!'</span><span class="s1">, </span><span class="s9">'success'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s12">catch</span><span class="s1"> (error) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>console.error(</span><span class="s9">'Update error:'</span><span class="s1">, error);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showMessage(searchMessage, </span><span class="s9">`Failed to update request: </span><span class="s1">${error.message}</span><span class="s9">`</span><span class="s1">, </span><span class="s9">'error'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">            </span></span><span class="s1">// Add event listener for the delete button</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById(</span><span class="s9">'delete-button'</span><span class="s1">).addEventListener(</span><span class="s9">'click'</span><span class="s1">, </span><span class="s12">async</span><span class="s1"> () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s12">try</span><span class="s1"> {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s12">await</span><span class="s1"> deleteDoc(doc(db, </span><span class="s9">`artifacts/</span><span class="s1">${appId}</span><span class="s9">/public/data/requests`</span><span class="s1">, docId));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>searchResults.innerHTML = </span><span class="s9">'&lt;p&gt;Request deleted successfully.&lt;/p&gt;'</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showMessage(searchMessage, </span><span class="s9">'Request deleted successfully!'</span><span class="s1">, </span><span class="s9">'success'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>searchIdInput.value = </span><span class="s9">''</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} </span><span class="s12">catch</span><span class="s1"> (error) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>console.error(</span><span class="s9">'Deletion error:'</span><span class="s1">, error);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>showMessage(searchMessage, </span><span class="s9">`Failed to delete request: </span><span class="s1">${error.message}</span><span class="s9">`</span><span class="s1">, </span><span class="s9">'error'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Helper functions</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">function</span><span class="s1"> showMessage(element, message, type) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>element.innerHTML = message;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>element.className = </span><span class="s9">`message-box </span><span class="s1">${type}</span><span class="s9">`</span><span class="s1">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+<p class="p9"><span class="s4"><span class="Apple-converted-space">        </span></span><span class="s1">// Set initial view on load</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>document.addEventListener(</span><span class="s9">'DOMContentLoaded'</span><span class="s1">, () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>switchView(</span><span class="s9">'all-requests-container'</span><span class="s1">);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s4"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+<p class="p7"><span class="s10"></span><br></p>
+</body>
+</html>
